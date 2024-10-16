@@ -1,0 +1,7 @@
+{
+  "name": "tocfl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
