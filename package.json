@@ -1,5 +1,5 @@
 {
-  "name": "tocfl",
+  "name": "@dennismuench/tocfl",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -39,5 +39,5 @@
     "vitest": "^0.34.6",
     "vue-tsc": "^2.0.22"
   },
-  "description": "An Ionic project"
+  "description": "Test of Chinese as a Foreign Language"
 }
