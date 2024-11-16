@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'tocfl',
-  webDir: 'dist'
+  appId: 'dev.dennismuench.tocfl-master',
+  appName: 'tocfl-master',
+  webDir: 'dist',
 };
 
 export default config;
