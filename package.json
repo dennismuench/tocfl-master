@@ -14,21 +14,16 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.9.1",
     "@capacitor/app": "6.0.1",
+    "@capacitor/cli": "6.1.2",
     "@capacitor/core": "6.1.2",
     "@capacitor/haptics": "6.0.1",
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
-    "ionicons": "^7.0.0",
-    "vue": "^3.3.0",
-    "vue-router": "^4.2.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^3.9.1",
-    "@capacitor/cli": "6.1.2",
     "@vitejs/plugin-legacy": "^5.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/test-utils": "^2.3.0",
@@ -38,7 +33,10 @@
     "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "eslint-plugin-vue": "^9.9.0",
+    "ionicons": "^7.0.0",
     "jsdom": "^22.1.0",
+    "pinyin-split": "^1.170.0",
+    "pinyin-utils": "^2.32.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "terser": "^5.4.0",
@@ -46,7 +44,10 @@
     "vite": "~5.2.0",
     "vite-plugin-pwa": "^0.21.0",
     "vitest": "^0.34.6",
-    "vue-tsc": "^2.0.22"
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "vue-tsc": "^2.0.22",
+    "xlsx": "file:vendor/xlsx-0.20.3.tgz"
   },
   "lint-staged": {
     "*": "eslint --quiet --fix"

@@ -7,10 +7,16 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
+      '@antfu/eslint-config':
+        specifier: ^3.9.1
+        version: 3.9.1(@typescript-eslint/utils@8.14.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3))(@vue/compiler-sfc@3.5.12)(eslint-plugin-format@0.1.2(eslint@9.15.0(jiti@1.21.6)))(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)(vitest@0.34.6(jsdom@22.1.0)(terser@5.35.0))
       '@capacitor/app':
         specifier: 6.0.1
         version: 6.0.1(@capacitor/core@6.1.2)
+      '@capacitor/cli':
+        specifier: 6.1.2
+        version: 6.1.2
       '@capacitor/core':
         specifier: 6.1.2
         version: 6.1.2
@@ -29,22 +35,6 @@ importers:
       '@ionic/vue-router':
         specifier: ^8.0.0
         version: 8.3.2
-      ionicons:
-        specifier: ^7.0.0
-        version: 7.4.0
-      vue:
-        specifier: ^3.3.0
-        version: 3.5.12(typescript@5.6.3)
-      vue-router:
-        specifier: ^4.2.0
-        version: 4.4.5(vue@3.5.12(typescript@5.6.3))
-    devDependencies:
-      '@antfu/eslint-config':
-        specifier: ^3.9.1
-        version: 3.9.1(@typescript-eslint/utils@8.14.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3))(@vue/compiler-sfc@3.5.12)(eslint-plugin-format@0.1.2(eslint@9.15.0(jiti@1.21.6)))(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)(vitest@0.34.6(jsdom@22.1.0)(terser@5.35.0))
-      '@capacitor/cli':
-        specifier: 6.1.2
-        version: 6.1.2
       '@vitejs/plugin-legacy':
         specifier: ^5.0.0
         version: 5.4.2(terser@5.35.0)(vite@5.2.14(@types/node@22.7.5)(terser@5.35.0))
@@ -72,9 +62,18 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.9.0
         version: 9.29.0(eslint@9.15.0(jiti@1.21.6))
+      ionicons:
+        specifier: ^7.0.0
+        version: 7.4.0
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
+      pinyin-split:
+        specifier: ^1.170.0
+        version: 1.170.0
+      pinyin-utils:
+        specifier: ^2.32.0
+        version: 2.32.0
       postcss:
         specifier: ^8.4.49
         version: 8.4.49
@@ -96,9 +95,18 @@ importers:
       vitest:
         specifier: ^0.34.6
         version: 0.34.6(jsdom@22.1.0)(terser@5.35.0)
+      vue:
+        specifier: ^3.3.0
+        version: 3.5.12(typescript@5.6.3)
+      vue-router:
+        specifier: ^4.2.0
+        version: 4.4.5(vue@3.5.12(typescript@5.6.3))
       vue-tsc:
         specifier: ^2.0.22
         version: 2.1.6(typescript@5.6.3)
+      xlsx:
+        specifier: file:vendor/xlsx-0.20.3.tgz
+        version: file:vendor/xlsx-0.20.3.tgz
 
 packages:
 
@@ -3327,6 +3335,12 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
+  pinyin-split@1.170.0:
+    resolution: {integrity: sha512-7hlVgPSxAg2qDrStiOJy0kSWT1/uxo5jw0FPdqr/yIS1ugR3YXawRR6LWrkBOQCe+FSci1mr4Z1MOiCEG3gi4Q==}
+
+  pinyin-utils@2.32.0:
+    resolution: {integrity: sha512-jgPlD0lhF9GCxhFkUD+KZ0NEHw3QCIGX1n11DPmPvvgqvrX3YUdlp2p7bdrbejnjmzNK+BJaDwG9uyApw3xL8Q==}
+
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
@@ -4280,6 +4294,12 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  xlsx@file:vendor/xlsx-0.20.3.tgz:
+    resolution: {integrity: sha512-oLDq3jw7AcLqKWH2AhCpVTZl8mf6X2YReP+Neh0SJUzV/BdZYjth94tG5toiMB1PPrYtxOCfaoUCkvtuH+3AJA==, tarball: file:vendor/xlsx-0.20.3.tgz}
+    version: 0.20.3
+    engines: {node: '>=0.8'}
+    hasBin: true
 
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
@@ -8117,6 +8137,10 @@ snapshots:
 
   pify@2.3.0: {}
 
+  pinyin-split@1.170.0: {}
+
+  pinyin-utils@2.32.0: {}
+
   pirates@4.0.6: {}
 
   pkg-types@1.2.1:
@@ -9192,6 +9216,8 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@8.18.0: {}
+
+  xlsx@file:vendor/xlsx-0.20.3.tgz: {}
 
   xml-name-validator@4.0.0: {}
 
